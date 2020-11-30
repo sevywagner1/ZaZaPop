@@ -1,10 +1,11 @@
 var React = require('react');
+var TopBar = require('TopBar');
 
 var Main = React.createClass({
   render: function () {
     return (
       <div>
-        <h2>Main Component</h2>
+        <TopBar/>
       </div>
     );
   }
