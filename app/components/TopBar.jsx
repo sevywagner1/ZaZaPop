@@ -10,7 +10,7 @@ var TopBar = React.createClass({
                         <ul className="dropdown menu" data-dropdown-menu>
                             <li className="menu-text">ZaZa Pop</li>
                             <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Home</IndexLink></li>
-                            <li><Link to="/Menu" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Menu</Link></li>
+                            <li><Link to="/menu" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Menu</Link></li>
                         </ul>
                     </div>
                 </div>

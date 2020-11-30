@@ -26,7 +26,8 @@ module.exports = {
       TopBar: 'app/components/TopBar.jsx',
       Home: 'app/components/Home.jsx',
       About: 'app/components/About.jsx',
-      Menu: 'app/components/Menu.jsx'
+      Menu: 'app/components/Menu.jsx',
+      ApplicationStyles: 'app/styles/app.css'
     },
     extensions: ['', '.js', '.jsx']
   },

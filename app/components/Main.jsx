@@ -7,7 +7,7 @@ var Main = React.createClass({
     return (
       <div>
         <TopBar/>
-        <Home/>
+        {this.props.children}
       </div>
     );
   }
