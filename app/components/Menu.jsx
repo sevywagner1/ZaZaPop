@@ -1,13 +1,13 @@
 var React = require('react');
 
-var Home = React.createClass({
+var Menu = React.createClass({
     render: function() {
         return(
             <div>
-                <center><h1>Welcome to ZaZa Pop!</h1></center>
+                <h1>Menu</h1>
             </div>
         );
     }
 });
 
-module.exports = Home;
+module.exports = Menu;

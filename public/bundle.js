@@ -26799,6 +26799,7 @@
 
 	var React = __webpack_require__(8);
 	var TopBar = __webpack_require__(252);
+	var Home = __webpack_require__(253);
 
 	var Main = React.createClass({
 	  displayName: 'Main',
@@ -26807,7 +26808,8 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(TopBar, null)
+	      React.createElement(TopBar, null),
+	      React.createElement(Home, null)
 	    );
 	  }
 	});
@@ -26822,6 +26824,10 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(166),
+	    Link = _require.Link,
+	    IndexLink = _require.IndexLink;
+
 	var TopBar = React.createClass({
 	    displayName: 'TopBar',
 
@@ -26830,9 +26836,39 @@
 	            'div',
 	            null,
 	            React.createElement(
-	                'h1',
-	                null,
-	                'Top Bar'
+	                'div',
+	                { className: 'top-bar' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'top-bar-left' },
+	                    React.createElement(
+	                        'ul',
+	                        { className: 'dropdown menu', 'data-dropdown-menu': true },
+	                        React.createElement(
+	                            'li',
+	                            { className: 'menu-text' },
+	                            'ZaZa Pop'
+	                        ),
+	                        React.createElement(
+	                            'li',
+	                            null,
+	                            React.createElement(
+	                                IndexLink,
+	                                { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	                                'Home'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'li',
+	                            null,
+	                            React.createElement(
+	                                Link,
+	                                { to: '/Menu', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	                                'Menu'
+	                            )
+	                        )
+	                    )
+	                )
 	            )
 	        );
 	    }
@@ -26856,9 +26892,13 @@
 	            'div',
 	            null,
 	            React.createElement(
-	                'h1',
+	                'center',
 	                null,
-	                'Home page'
+	                React.createElement(
+	                    'h1',
+	                    null,
+	                    'Welcome to ZaZa Pop!'
+	                )
 	            )
 	        );
 	    }
