@@ -106,12 +106,12 @@
 	var Main = __webpack_require__(251);
 	var Home = __webpack_require__(253);
 	var About = __webpack_require__(254);
-	var Menu = __webpack_require__(261);
+	var Menu = __webpack_require__(255);
 
-	__webpack_require__(255);
+	__webpack_require__(256);
 	$(document).foundation();
 
-	__webpack_require__(259);
+	__webpack_require__(260);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -119,7 +119,8 @@
 	  React.createElement(
 	    Route,
 	    { path: '/', component: Main },
-	    React.createElement(Route, { path: '/menu', className: 'link', component: Menu }),
+	    React.createElement(Route, { path: '/about', component: About }),
+	    React.createElement(Route, { path: '/menu', component: Menu }),
 	    React.createElement(IndexRoute, { component: Home })
 	  )
 	), document.getElementById('app'));
@@ -26854,7 +26855,7 @@
 	                        ),
 	                        React.createElement(
 	                            'li',
-	                            null,
+	                            { className: 'top-link' },
 	                            React.createElement(
 	                                IndexLink,
 	                                { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
@@ -26863,11 +26864,20 @@
 	                        ),
 	                        React.createElement(
 	                            'li',
-	                            null,
+	                            { className: 'top-link-1' },
 	                            React.createElement(
 	                                Link,
 	                                { to: '/menu', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	                                'Menu'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'li',
+	                            { className: 'top-link' },
+	                            React.createElement(
+	                                Link,
+	                                { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	                                'About'
 	                            )
 	                        )
 	                    )
@@ -26897,8 +26907,13 @@
 	            null,
 	            React.createElement(
 	                'h1',
-	                { className: 'text-center page-title' },
+	                { className: 'text-center home-title' },
 	                'Welcome to ZaZa Pop!'
+	            ),
+	            React.createElement(
+	                'h2',
+	                { className: 'text-center home-message' },
+	                'Welcome to the Exotic Soda Food Truck'
 	            )
 	        );
 	    }
@@ -26936,13 +26951,55 @@
 /* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var React = __webpack_require__(8);
+	var TopBar = __webpack_require__(252);
+
+	var Menu = React.createClass({
+	    displayName: 'Menu',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(
+	                'marquee',
+	                { className: 'menu' },
+	                React.createElement('img', { src: 'https://images.heb.com/is/image/HEBGrocery/001422726' }),
+	                React.createElement('img', { src: 'https://southernlaredo.com/wp-content/uploads/2015/06/BigManzana_English_20oz_vintage.jpg' }),
+	                React.createElement('img', { src: 'https://assets3.thrillist.com/v1/image/1896535/1000x666.6666666666666/flatten;crop;jpeg_quality=70' }),
+	                React.createElement('img', { src: 'https://i.pinimg.com/originals/e6/f7/2d/e6f72d818aab1e6608d9121a8280fbe9.jpg' }),
+	                React.createElement('img', { src: 'https://i1.wp.com/nassaucandy.blog/wp-content/uploads/2019/07/951971.jpg?ssl=1' }),
+	                React.createElement('img', { src: 'https://www.totallytarget.com/wp-content/uploads/2017/07/pepsi-fire-deal.jpg' })
+	            ),
+	            React.createElement(
+	                'h1',
+	                { className: 'text-center menu-title' },
+	                'Exotic Menu'
+	            ),
+	            React.createElement(
+	                'p',
+	                { className: 'tect-center menu-paragraph' },
+	                'Imported in from all over the world we have the zaza. From foreign fanta\'s to rare faygo\'s there\'s definitely something for you.'
+	            )
+	        );
+	    }
+	});
+
+	module.exports = Menu;
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(256);
+	var content = __webpack_require__(257);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(258)(content, {});
+	var update = __webpack_require__(259)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26959,10 +27016,10 @@
 	}
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(257)();
+	exports = module.exports = __webpack_require__(258)();
 	// imports
 
 
@@ -26973,7 +27030,7 @@
 
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports) {
 
 	/*
@@ -27029,7 +27086,7 @@
 
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -27283,16 +27340,16 @@
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(260);
+	var content = __webpack_require__(261);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(258)(content, {});
+	var update = __webpack_require__(259)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27309,45 +27366,18 @@
 	}
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(257)();
+	exports = module.exports = __webpack_require__(258)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".page-title {\r\n    margin-top: 2.5rem;\r\n    margin-bottom: 2.5rem;\r\n    color: #470059;\r\n    font-weight: bold;\r\n}\r\n\r\n", ""]);
+	exports.push([module.id, ".home-title {\r\n    margin-top: 2.5rem;\r\n    margin-bottom: 2.5rem;\r\n    color: skyblue;\r\n    font-weight: bold;\r\n}\r\n\r\n.home-message {\r\n  color: gold;\r\n}\r\n\r\n.menu {\r\n  background-color: #470059;\r\n}\r\n\r\n.menu-title {\r\n  color: gold;\r\n  font-weight: bold;\r\n  font-family: 'brush script mt';\r\n  font-size: 75px;\r\n}\r\n\r\n.menu-paragraph {\r\n  color: skyblue;\r\n  font-family: 'marker felt', 'fantasy';\r\n  font-size: 30px;\r\n}\r\n\r\nbody {\r\n  background-image: url('https://i.pinimg.com/originals/26/92/d7/2692d7509999ec87416f25bebea3d26e.jpg');\r\n}\r\n\r\n.menu-text {\r\n  background-color: skyblue;\r\n}\r\n\r\n.top-link {\r\n  background-color: #470059;\r\n  border-style: solid;\r\n}\r\n\r\n.top-link-1 {\r\n  background-color: #a200ca;\r\n  border-style: solid;\r\n}", ""]);
 
 	// exports
 
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(8);
-	var TopBar = __webpack_require__(252);
-
-	var Menu = React.createClass({
-	    displayName: 'Menu',
-
-	    render: function render() {
-	        return React.createElement(
-	            'div',
-	            null,
-	            React.createElement(
-	                'h1',
-	                null,
-	                'Menu:'
-	            )
-	        );
-	    }
-	});
-
-	module.exports = Menu;
 
 /***/ })
 /******/ ]);

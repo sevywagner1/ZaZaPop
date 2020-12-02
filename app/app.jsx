@@ -14,7 +14,8 @@ require('style!css!ApplicationStyles');
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Route path="/menu" className="link" component={Menu}/>
+      <Route path="/about" component={About}/>
+      <Route path="/menu" component={Menu}/>
       <IndexRoute component={Home}/>
     </Route>
   </Router>,

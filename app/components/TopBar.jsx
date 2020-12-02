@@ -9,8 +9,9 @@ var TopBar = React.createClass({
                     <div className="top-bar-left">
                         <ul className="dropdown menu" data-dropdown-menu>
                             <li className="menu-text">ZaZa Pop</li>
-                            <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Home</IndexLink></li>
-                            <li><Link to="/menu" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Menu</Link></li>
+                            <li className="top-link"><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Home</IndexLink></li>
+                            <li className="top-link-1"><Link to="/menu" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Menu</Link></li>
+                            <li className="top-link"><Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link></li>
                         </ul>
                     </div>
                 </div>

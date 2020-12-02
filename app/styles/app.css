@@ -1,7 +1,45 @@
-.page-title {
+.home-title {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    color: #470059;
+    color: skyblue;
     font-weight: bold;
 }
 
+.home-message {
+  color: gold;
+}
+
+.menu {
+  background-color: #470059;
+}
+
+.menu-title {
+  color: gold;
+  font-weight: bold;
+  font-family: 'brush script mt';
+  font-size: 75px;
+}
+
+.menu-paragraph {
+  color: skyblue;
+  font-family: 'marker felt', 'fantasy';
+  font-size: 30px;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/26/92/d7/2692d7509999ec87416f25bebea3d26e.jpg');
+}
+
+.menu-text {
+  background-color: skyblue;
+}
+
+.top-link {
+  background-color: #470059;
+  border-style: solid;
+}
+
+.top-link-1 {
+  background-color: #a200ca;
+  border-style: solid;
+}
