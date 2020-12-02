@@ -6,7 +6,7 @@ var Home = React.createClass({
         return(
             <div>
                 <h1 className="text-center home-title">Welcome to ZaZa Pop!</h1>
-                <h2 className="text-center home-message">Welcome to the Exotic Soda Food Truck</h2>
+                <h2 className="text-center home-message">The Exotic Soda Food Truck</h2>
             </div>
         );
     }
