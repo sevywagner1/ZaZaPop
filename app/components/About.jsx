@@ -13,8 +13,8 @@ var About = React.createClass({
                 <p className="about-message">
                     I've always loved soda, but all the soda's you can get everywhere sometimes feel like all the same thing, 
                     so I got into exotic sodas. After realizing that there was so many amazing flavors for soda that way too 
-                    many people don't know about. I love to travel and host events so I thought I'd spread the amazing refresh 
-                    from one ice cold sip of some zaza.
+                    many people don't know about, I came to a conclusion. I love to travel and host events so I thought I'd 
+                    spread the amazing refreshing feeling from one ice cold sip of some zaza pop.
                 </p>
             </div>
         );
