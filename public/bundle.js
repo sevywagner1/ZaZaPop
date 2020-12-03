@@ -107,12 +107,12 @@
 	var Home = __webpack_require__(253);
 	var About = __webpack_require__(254);
 	var Menu = __webpack_require__(255);
-	var ContactUs = __webpack_require__(262);
+	var ContactUs = __webpack_require__(256);
 
-	__webpack_require__(256);
+	__webpack_require__(257);
 	$(document).foundation();
 
-	__webpack_require__(260);
+	__webpack_require__(261);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -26981,7 +26981,7 @@
 	            React.createElement(
 	                "p",
 	                { className: "about-message" },
-	                "I've always loved soda, but all the soda's you can get everywhere sometimes feel like all the same thing, so I got into exotic sodas. After realizing that there was so many amazing flavors for soda that way too many people don't know about. I love to travel and host events so I thought I'd spread the amazing refresh from one ice cold sip of some zaza."
+	                "I've always loved soda, but all the soda's you can get everywhere sometimes feel like all the same thing, so I got into exotic sodas. After realizing that there was so many amazing flavors for soda that way too many people don't know about, so I came to a conclusion. I love to travel and host events so I thought I'd spread the amazing refreshing feeling from one ice cold sip of some zaza pop."
 	            )
 	        );
 	    }
@@ -27108,13 +27108,39 @@
 /* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	var React = __webpack_require__(8);
+
+	var ContactUs = React.createClass({
+	    displayName: "ContactUs",
+
+	    render: function render() {
+	        return React.createElement(
+	            "div",
+	            null,
+	            React.createElement(
+	                "p",
+	                { className: "text-center contact-us-title" },
+	                "Contact Us"
+	            )
+	        );
+	    }
+	});
+
+	module.exports = ContactUs;
+
+/***/ }),
+/* 257 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(257);
+	var content = __webpack_require__(258);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(259)(content, {});
+	var update = __webpack_require__(260)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27131,10 +27157,10 @@
 	}
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(258)();
+	exports = module.exports = __webpack_require__(259)();
 	// imports
 
 
@@ -27145,7 +27171,7 @@
 
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports) {
 
 	/*
@@ -27201,7 +27227,7 @@
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -27455,16 +27481,16 @@
 
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(261);
+	var content = __webpack_require__(262);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(259)(content, {});
+	var update = __webpack_require__(260)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27481,10 +27507,10 @@
 	}
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(258)();
+	exports = module.exports = __webpack_require__(259)();
 	// imports
 
 
@@ -27493,32 +27519,6 @@
 
 	// exports
 
-
-/***/ }),
-/* 262 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var React = __webpack_require__(8);
-
-	var ContactUs = React.createClass({
-	    displayName: "ContactUs",
-
-	    render: function render() {
-	        return React.createElement(
-	            "div",
-	            null,
-	            React.createElement(
-	                "p",
-	                { className: "text-center contact-us-title" },
-	                "Contact Us"
-	            )
-	        );
-	    }
-	});
-
-	module.exports = ContactUs;
 
 /***/ })
 /******/ ]);
