@@ -33,6 +33,9 @@ var Menu = React.createClass({
             
                 <p className="menu-item gold-faygo">Gold Faygo</p>
                 <p className="menu-description">Gold faygo, not quite as rare as the Blueberry, is an amazing combo of flavors from ginger-ale and cream soda.</p>
+            
+                <p className="menu-item fanta-exotic">Fanta Exotic</p>
+                <p className="menu-description">Delicious blend of orange, passionfruit, and peach into one soda.</p>
             </div>
         );
     }
